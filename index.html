@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101010">
+<title>Неизвестен — @neisceten</title>
+<style>
+:root{--bg:#101010;--panel:#171717;--text:#e9e9e9;--muted:#858585;--line:#303030;--accent:#c7ff4a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:14px/1.65 Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+.wrap{width:min(760px,calc(100% - 36px));margin:auto}
+.top{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}
+.brand{font-weight:700;letter-spacing:-.4px}
+.nav{display:flex;gap:20px;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:1px}
+.hero{padding:76px 0 52px;display:grid;grid-template-columns:112px 1fr;gap:26px;align-items:center}
+.avatar{width:112px;height:112px;object-fit:cover;border:1px solid var(--line);background:var(--panel);padding:4px}
+.eyebrow{font-size:11px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+h1{font-size:clamp(30px,7vw,48px);line-height:1.05;letter-spacing:-2px}
+.handle{color:var(--muted);margin-top:8px}
+.intro{color:#b7b7b7;max-width:510px;margin-top:18px}
+.actions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);padding:9px 15px;font-size:12px;letter-spacing:.5px}
+.btn.primary{background:var(--accent);color:#111;border-color:var(--accent);font-weight:700}
+.rule{border-top:1px solid var(--line)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.heading{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px}
+h2{font-size:17px;letter-spacing:-.3px}
+.num{color:var(--muted);font-size:11px;letter-spacing:1px}
+.copy{color:#aaa;max-width:650px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{border:1px solid var(--line);padding:5px 10px;color:#aaa;font-size:12px}
+.links{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.link{display:flex;justify-content:space-between;align-items:center;background:var(--panel);border:1px solid var(--line);padding:14px 16px;transition:border-color .2s}
+.link:hover{border-color:var(--accent)}
+.link small{display:block;color:var(--muted);font-size:11px}
+.arrow{color:var(--accent)}
+.log{display:grid;grid-template-columns:90px 1fr;gap:12px;padding:11px 0;border-bottom:1px solid #242424}
+.date{color:var(--muted);font-size:12px}
+.log p{color:#aaa}\n.comments-box{background:var(--panel);border:1px solid var(--line);padding:16px;min-height:120px}\n.comments-box iframe{width:100%}
+footer{padding:25px 0 40px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:11px}
+@media(max-width:560px){.top{align-items:flex-start;gap:18px;flex-direction:column}.nav{gap:15px;flex-wrap:wrap}.hero{padding:48px 0 36px;grid-template-columns:78px 1fr;gap:17px}.avatar{width:78px;height:78px}h1{font-size:32px}.links{grid-template-columns:1fr}.heading{gap:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="#home">neisceten<span style="color:var(--accent)">.</span></a>
+  <nav class="nav"><a href="#home">Home</a><a href="#about">About</a><a href="#links">Links</a><a href="#log">Log</a><a href="#guestbook">Отзывы</a></nav>
+</header>
+
+<main id="home">
+  <div class="hero">
+    <img class="avatar" src="avatar.png" alt="Аватар Неизвестен">
+    <div>
+      <div class="eyebrow">personal page / 2026</div>
+      <h1>Неизвестен</h1>
+      <div class="handle">@neisceten</div>
+      <p class="intro">Личное пространство в сети. Интересуюсь интернет-культурой, дизайном, технологиями и тем, как устроен цифровой мир.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://t.me/neisceten" target="_blank" rel="noopener">TELEGRAM ↗</a>
+        <a class="btn" href="#about">ОБО МНЕ ↓</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="heading"><h2>Обо мне</h2><span class="num">01 — ABOUT</span></div>
+    <p class="copy">Неизвестен — цифровой псевдоним. Здесь собраны мои интересы, ссылки и небольшие обновления. Мне нравится создавать собственный стиль, изучать новые инструменты и запускать проекты в интернете.</p>
+  </section>
+
+  <section>
+    <div class="heading"><h2>Интересы</h2><span class="num">02 — INTERESTS</span></div>
+    <div class="tags"><span class="tag">OSINT</span><span class="tag">Telegram</span><span class="tag">Web3</span><span class="tag">Digital art</span><span class="tag">Design</span><span class="tag">Technology</span></div>
+  </section>
+
+  <section id="links">
+    <div class="heading"><h2>Ссылки</h2><span class="num">03 — ELSEWHERE</span></div>
+    <div class="links">
+      <a class="link" href="https://t.me/neisceten" target="_blank" rel="noopener"><span>Telegram<small>@neisceten</small></span><span class="arrow">↗</span></a>
+      <a class="link" href="https://github.com/neisceten" target="_blank" rel="noopener"><span>GitHub<small>neisceten</small></span><span class="arrow">↗</span></a>
+    </div>
+  </section>
+
+  <section id="log">
+    <div class="heading"><h2>Журнал</h2><span class="num">04 — LOG</span></div>
+    <div class="log"><span class="date">12.11.2026</span><p>Обновил личную страницу.</p></div>
+    <div class="log"><span class="date">2026</span><p>Начало нового этапа.</p></div>
+  </section>
+
+  <section id="guestbook">
+    <div class="heading"><h2>Мнение обо мне</h2><span class="num">05 — GUESTBOOK</span></div>
+    <p class="copy" style="margin-bottom:16px">
+      Оставь отзыв или напиши, какое у тебя впечатление обо мне.
+      Пожалуйста, общайся уважительно и не публикуй личные данные.
+    </p>
+    <div class="comments-box">
+      <script src="https://utteranc.es/client.js"
+        repo="neisceten/neisceten.github.io"
+        issue-term="pathname"
+        label="guestbook"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+      </script>
+      <noscript>Чтобы посмотреть комментарии, включи JavaScript в браузере.</noscript>
+    </div>
+  </section>
+
+</main>
+
+<footer><span>© 2026 Неизвестен</span><span>made by @neisceten</span><a href="#home">наверх ↑</a></footer>
+</div>
+</body>
+</html>
